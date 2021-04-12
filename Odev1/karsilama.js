@@ -14,7 +14,7 @@ let smile = document.querySelector("#smile")
 smile.innerHTML = `${SMILE}`
 
 let haftaSonu = "Mutlu hafta sonları :)"
-let pazartesi = "Pazartesi sendromu :/"
+let pazartesi = " sendromu :/"
 //let haftaIcı =  "hafta içi"
 
 function myTimer() {
