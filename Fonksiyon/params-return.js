@@ -1,3 +1,36 @@
+const hellofunction = (firstName) => {console.log(`hello ${firstName}`)}
+hellofunction("hilal") // Fat Arrow tipi fonksiyon tanımlama
+
+
+
+const seriesList = list => {
+  
+  list.forEach((series, index) => {
+    console.log(`${index}. ${series}`) 
+  });
+};
+
+seriesList(["Firefly", "The Mandalorian","Breaking Bad"]);
+
+// forEach yapısıyla tüm listeyi dolaşıp yazdırdık
+
+
+let movie = {   // this.name i tanıyan fat arrow fonksiyonu olmuyor 
+
+name: "La la land",
+
+thisInArrow:() => { 
+console.log("Movie name is " + this.name); // 'this' window'u referans gösterir. Bu yüzden name'yi bulamaz.
+}, 
+
+thisInRegular(){ 
+console.log("Movie name is " + this.name); // 'this' kendisini referans gösterir ve çalışır.
+} 
+
+};
+movie.thisInRegular()
+movie.thisInArrow()
+
 function greetings(name, lastName) {
 
     //console.log(`Merhaba ${name ? name : ""} ${lastName ? lastName : ""}`);
@@ -18,5 +51,4 @@ function domIdWriteInfo(id, info2) {
 }
 
 domIdWriteInfo('greeting', info)
-
 

@@ -25,6 +25,6 @@ function printScreen3() {
 printScreen1();
 printScreen2();
 printScreen3();
-const carpim = (sayi1, sayi2) => sayi1 * sayi2;   //çarpım isminde fonk tanımladık 
+const carpim = (sayi1, sayi2) => sayi1 * sayi2;   //çarpım isminde fonk tanımladık Fat Arrow
 console.log(carpim(2, 10));
 
